@@ -139,7 +139,7 @@ echo('<?xml version="1.0" encoding="UTF-8"?>');
       <!-- FIXME should be in a wiki document? -->
         <div id="menu">
           <a href="/Start">Start</a>
-          <a href="/Contribute">Contribute</a>
+          <a href="/Contributing">Contribute</a>
           <a href="/Forums">Forums</a>
         </div>
       <div id="search"><?php $this->BaseSiteSearch(); ?></div>
@@ -249,50 +249,50 @@ if  ($wgTitle->getPrefixedText() != wfHomePageInternalTitle()) { #sidebar for ev
       <div class="links">
         <h3>About</h3>
         <ul>
-          <li><a href="#">About Mono</a></li>
-          <li><a href="#">Roadmap</a></li>
-          <li><a href="#">Technologies</a></li>
-          <li><a href="#">Screenshots</a></li>
-          <li><a href="#">Success Stories</a></li>
-          <li><a href="#">FAQs</a></li>
+          <li><a href="/About">About Mono</a></li>
+          <li><a href="/Roadmap">Roadmap</a></li>
+          <li><a href="/What_is_Mono">Technologies</a></li>
+          <li><a href="/Screenshots">Screenshots</a></li>
+          <li><a href="/Companies_Using_Mono">Success Stories</a></li>
+          <li><a href="/FAQ">FAQs</a></li>
         </ul>
       </div><!--links-->
       <div class="links">
         <h3>Documentation</h3>
         <ul>
-          <li><a href="#">Getting Started</a></li>
-          <li><a href="#">API Reference</a></li>
-          <li><a href="#">Articles</a></li>
+          <li><a href="/Start">Getting Started</a></li>
+          <li><a href="http://go-mono.org/docs">API Reference</a></li>
+          <li><a href="/Articles">Articles</a></li>
         </ul>
       </div><!--links-->
       <div class="links">
         <h3>Downloads</h3>
         <ul>
-          <li><a href="#">Latest Release</a></li>
-          <li><a href="#">MonoDevelop</a></li>
-          <li><a href="#">Tools</a></li>
-          <li><a href="#">Daily Snapshots</a></li>
-          <li><a href="#">Previous Releases</a></li>
+          <li><a href="/Downloads">Latest Release</a></li>
+          <li><a href="http://www.monodevelop.com">MonoDevelop</a></li>
+          <li><a href="/Tools">Tools</a></li>
+          <li><a href="/Other_Downloads#Snapshots">Daily Snapshots</a></li>
+          <li><a href="/OldReleases">Previous Releases</a></li>
         </ul>
       </div><!--links-->
       <div class="links">
         <h3>Resources</h3>
         <ul>
-          <li><a href="#">Forums</a></li>
-          <li><a href="#">Mailing Lists</a></li>
-          <li><a href="#">Chat (IRC)</a></li>
-          <li><a href="#">Blogs</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="/Forums/">Forums</a></li>
+          <li><a href="/MailingLists">Mailing Lists</a></li>
+          <li><a href="/IRC">Chat (IRC)</a></li>
+          <li><a href="http://www.go-mono.com/monologue/">Blogs</a></li>
+          <li><a href="/Contact/">Contact</a></li>
         </ul>
       </div><!--links-->
       <div class="links">
         <h3>Mono Development</h3>
         <ul>
-          <li><a href="#">Report Bugs</a></li>
-          <li><a href="#">Contributing</a></li>
-          <li><a href="#">SVN</a></li>
-          <li><a href="#">Build Status</a></li>
-          <li><a href="#">Class Status</a></li>
+          <li><a href="/Bugs">Report Bugs</a></li>
+          <li><a href="/Contributing">Contributing</a></li>
+          <li><a href="/SVN">SVN</a></li>
+          <li><a href="http://mono.ximian.com/monobuild/">Build Status</a></li>
+          <li><a href="/Resources#API_completion_status_pages">Class Status</a></li>
         </ul>
       </div><!--links-->
       <div class="links">
@@ -301,9 +301,9 @@ if  ($wgTitle->getPrefixedText() != wfHomePageInternalTitle()) { #sidebar for ev
         then, Mono has been taken up as the platform of choice for many
         open-source and commercial projects. See Mono in action:</p>
         <ul>
-          <li><a href="#">Screenshots</a></li>
-          <li><a href="#">Videos</a></li>
-          <li><a href="#">Applications that use Mono</a></li>
+          <li><a href="/Screenshots">Screenshots</a></li>
+          <li><a href="/Videos">Videos</a></li>
+          <li><a href="/Software">Applications that use Mono</a></li>
         </ul>
       </div><!--links-->
 
