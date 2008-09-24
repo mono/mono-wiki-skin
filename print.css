@@ -1,0 +1,13 @@
+div.header,
+div.body div.siteNav,
+div.body div.page div.pageBar, 
+div.body div.page div.pageInfo, 
+div.body div.page div.pageStatus, 
+div.body div.page div.pageRevision,
+div.body div.page div.pageToc,
+div.body div.file, 
+div.body div.gallery, 
+div.custom, 
+div.body div.page div.pageComments {
+	display: none;
+}

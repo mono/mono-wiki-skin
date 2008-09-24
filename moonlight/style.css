@@ -1,0 +1,302 @@
+/* Moonlight Stylesheet */
+body {
+  background: #4d4d4d url(/skins/mono/moonlight/images/header-bg.png) no-repeat left top;
+  padding: 0;
+  margin: 0;
+  font-family: "Droid Sans", Myriad, Segoe, Sans-Serif;
+  font-size: 13px;
+  color: #fff;
+}
+
+a { color: #83a67f; text-decoration: none; font-weight: bold; }
+a:hover { text-decoration: underline; color: #a3c69f; }
+ul>li { list-style-image: url(/skins/mono/moonlight/images/li.png); line-height: 150%; }
+
+#menu { font-family: 'Arial Rounded CE', 'Arial Rounded', Arial, Sans-Serif; color: #c5d2c8; }
+h1,h2,h3,h4,h5 { font-family: 'Arial Rounded CE', 'Arial Rounded', Arial, Sans-Serif; 
+                       color: #c5d2c8; margin: 1.5em 0 .5em 0; }
+h1 { font-size: 230% }
+h2 { font-size: 190% }
+h3 { font-size: 150% }
+h4 { font-size: 130% }
+h5 { font-size: 120% }
+ul,ol { margin: 1em 0 2em 2em; }
+
+dt { font-weight: bold; margin-left: 1em; }
+dd { font-weight: normal; margin: 0 0 1em 3em; }
+td { padding: .5em; vertical-align: top; } 
+
+hr {
+  display: block;
+  width: 100%;
+  height: 1px;
+  margin: 0; padding: 0;
+  border: 0;
+  background: url(/skins/mono/moonlight/images/hr.png) no-repeat 50% 50%;
+}
+
+p,blockquote { margin-bottom: 1em; line-height: 160%; }
+blockquote { margin-left: 2em; }
+
+pre {
+  background-color: black;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  padding: 1em;
+  max-width: 60em;
+  overflow: auto;
+  margin-bottom: 1em;
+}
+
+
+.header {
+  position: relative;
+  min-height: 48px;
+  overflow: hidden;
+  max-width: 86em;
+  margin: auto;
+}
+  hr.headerhr { display: none; }
+  .page-home .header { /* frontpage */
+    position: relative;
+    min-height: 87px;
+    overflow: hidden;
+    max-width: 86em;
+    margin: auto;
+  }
+
+  #logo {
+    display: block;
+    border: 0;
+    position: absolute;
+    top: 18px;
+    left: 24px;
+    width: 150px;
+    height: 30px;
+    background: url(/skins/mono/moonlight/images/logo-mini.png) no-repeat top left;
+  }
+
+
+  .page-home #logo { /* frontpage */
+    width: 264px;
+    height: 53px;
+    background: url(/skins/mono/moonlight/images/logo.png) no-repeat top left;
+  }
+
+  #navi {
+    position: absolute;
+    bottom: 10px;
+    right: 0;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  #search, #menu { float: left; } /* need inline-block*/
+  .siteSearch form>span { display: none; } /* No stupid redundant label */
+
+  #menu {
+    font-size: 115%;
+  }
+    #menu>a { margin-right: .5em; }
+
+#splash {
+  background: #192838 url(/skins/mono/moonlight/images/splash-gradient.png) no-repeat 40% bottom;
+  color: #fff;
+  border-bottom: 1px solid #091828;
+  overflow: hidden;
+  padding-top: 1px;
+}
+  #splash>div {
+    max-width: 80em;
+    margin: auto;
+    padding: 0 2em;
+    position: relative;
+    height: 270px;
+  }
+  
+  #splash h1 { margin-top: 1em; color: #fff; } 
+  #splash .about { max-width: 30%; margin-left: 50px;}
+
+  #hill {
+    width: 1062px;
+    height: 115px;
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+    background: url(/skins/mono/moonlight/images/splash-hill.png) no-repeat top left;
+  }
+
+  #clouds {
+    width: 726px;
+    height: 169px;
+    position: absolute;
+    top: 10px;
+    right: 100px;
+    background: url(/skins/mono/moonlight/images/splash-clouds-stars.png) no-repeat top left;
+  }
+
+  #moon {
+    width: 66px;
+    height: 68px;
+    position: absolute;
+    top: 48px;
+    right: 478px;
+    background: url(/skins/mono/moonlight/images/splash-moon.png) no-repeat top left;
+  }
+
+  #house {
+    width: 57px;
+    height: 68px;
+    position: absolute;
+    bottom: 104px;
+    right: 180px;
+    background: url(/skins/mono/moonlight/images/splash-house.png) no-repeat top left;
+  }
+
+  #download {
+    display: block;
+    text-indent: -300em;
+    width: 199px;
+    height: 39px;
+    position: absolute;
+    bottom: 20px;
+    right: 80px;
+    background: url(/skins/mono/moonlight/images/splash-download.png) no-repeat top left;
+  }
+
+
+  #splash .distro-icons {
+    position: absolute;
+    bottom: 16px;
+    left: 16px;
+  }
+    .distro-icons>a>img { border: 0; margin-right: 6px; }
+
+#content {
+  margin: auto;
+  max-width: 60em;
+  padding: 1em 2em 6em 20em;
+  position: relative;
+}
+  .page-home #content {
+    max-width: 80em;
+    padding: 1em 2em;
+  }
+  .page-home #title { display: none; }
+  .sidebar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 18em;
+    padding: 1em;
+    margin-top: 2em;
+  }
+    #sidebarmenu a {
+      display: block;
+    }
+
+.columns {
+  overflow: hidden;
+  margin-bottom: 2em;
+}
+  .columns>div {
+    float: left;
+    width: 46%;
+    margin-right: 2em; 
+  }
+  
+  .spotproject { margin-bottom: 2em; overflow: hidden; }
+
+    .spotproject h3 { margin-top: 0; }
+
+    .spotproject img {
+      display: block;
+      float: left;
+      margin-right: 8px;
+    }
+
+  .separator {
+    padding: 1px 0;
+    width: 100%;
+    background-color: #192838;
+    height: 1px;
+    border-bottom: 1px solid #090818;
+  }
+
+#footer {
+  background-color: #373737;
+  padding-top: 1px;
+}
+
+  #footer .sitemap, #copy, #footer .wikiEdit {
+    max-width: 80em;
+    margin: auto;
+    padding: 2em;
+    overflow: hidden;
+    clear: left;
+  }
+    .sitemap a { color: #9db8d2;}
+
+    ul.wikiEdit {
+    }
+    .wikiEdit li {
+      display: block;
+      float: left;
+      margin-right: 1em;
+      font-size: 80%;
+    }
+
+    #footer .links {
+      font-size: 90%;
+      float: left;
+      margin: 0 2em 0 1em;
+      width: 19em;
+      min-height: 16em;
+    }
+      .links ul {
+        line-height: 150%;
+        margin: 0 0 0 2em;
+      }
+      .links li { margin: 0; }
+
+    #mono-logo {
+      display: block;
+      float: left;
+      width: 127px;
+      height: 32px;
+      background: url(/skins/mono/moonlight/images/mono-logo.png) no-repeat top left;
+      text-indent: -300em;
+      margin-right: 20px;
+    }
+    
+    #novell-logo {
+      display: block;
+      float: left;
+      width: 73px;
+      height: 32px;
+      background: url(/skins/mono/moonlight/images/novell-logo.png) no-repeat top left;
+      border-right: 1px dotted #828282;
+      padding-right: 5px;
+      margin-right: 10px;
+      text-indent: -300em;
+    }
+
+    #footer .legal { font-size: 90%; color: #828282; }
+
+/* images can't be too wide */
+img.internal { max-width: 60em; width: 100%; margin: 1em 0 2em 0; }
+td>img.internal { max-width: 300px; width: inherit; }
+
+.printfooter { display: none; }
+
+#pageToc { display: none; } /*FIXME just a workaround */
+  .pageToc li { font-size: 90%; margin: 0 0 1em 0; position: relative; padding-left: 2.2em; }
+    .pageToc>ol>li { padding-left: 1.5em; }
+    .pageToc>ol>li>ol>li>ol>li { padding-left: 3em; }
+  .pageToc li>span { display: block; position: absolute; top: 0; left: 0; }
+  .editIcon .sectionedit {
+    background: url('/skins/mono/moonlight/images/edit.png') no-repeat top left;
+  }
+
+#pageTypeSpecial { padding: 1em; margin: 2em 0 14em 0; }
+#pageTypeSpecial #searchForm { display: none; }

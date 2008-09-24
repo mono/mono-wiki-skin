@@ -1,0 +1,325 @@
+/* Mono Stylesheet */
+body {
+  background-color: #fff;
+  padding: 0;
+  margin: 0;
+  font-family: "Droid Sans", Myriad, Segoe, Sans-Serif;
+  font-size: 13px;
+  color: #000;
+}
+
+a { color: #5d7555; text-decoration: none; font-weight: bold; }
+a:hover { text-decoration: underline; color: #a3c69f; }
+ul>li { list-style-image: url(/skins/mono/moonlight/images/li.png); line-height: 150%; }
+
+#menu { font-family: 'Arial Rounded CE', 'Arial Rounded', Arial, Sans-Serif; color: #c5d2c8; }
+h1,h2,h3,h4,h5 { font-family: 'Arial Rounded CE', 'Arial Rounded', Arial, Sans-Serif; 
+                       color: #444; margin: 1.5em 0 .5em 0; }
+  #title { margin-top: .6em; }
+  h1 { font-size: 230% }
+  h2 { font-size: 190% }
+  h3 { font-size: 150% }
+  h4 { font-size: 130% }
+  h5 { font-size: 120% }
+ul,ol { margin: 1em 0 2em 2em; }
+li>ul { margin: 0 1em; }
+
+dt { font-weight: bold; margin-left: 1em; }
+dd { font-weight: normal; margin: 0 0 1em 3em; }
+td { padding: .5em; vertical-align: top; } 
+
+hr {
+  display: block;
+  width: 100%;
+  height: 1px;
+  margin: 0; padding: 0;
+  border: 0;
+  background: url(/skins/mono/moonlight/images/hr.png) no-repeat 50% 50%;
+}
+
+p,blockquote { margin-bottom: 1em; line-height: 160%; }
+blockquote { margin-left: 2em; }
+
+pre {
+  background-color: #ddd;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  padding: 1em;
+  max-width: 60em;
+  overflow: auto;
+  margin-bottom: 1em;
+}
+
+
+.header {
+  position: relative;
+  min-height: 53px;
+  overflow: hidden;
+  max-width: 86em;
+  margin: auto;
+}
+  hr.headerhr { height: 15px; width: 100%; margin: 0; padding: 0;
+    background: url(/skins/mono/mono/images/header-border.png) repeat-x bottom center;
+  }
+
+  .page-home .header { /* frontpage */
+    position: relative;
+    min-height: 87px;
+    overflow: hidden;
+    max-width: 86em;
+    margin: auto;
+  }
+  .page-home .headerhr { display: none; }
+
+  #logo {
+    display: block;
+    border: 0;
+    position: absolute;
+    top: 18px;
+    left: 24px;
+    width: 125px;
+    height: 31px;
+    background: url(/skins/mono/mono/images/logo-mini.png) no-repeat top left;
+  }
+
+
+  .page-home #logo { /* frontpage */
+    width: 167px;
+    height: 41px;
+    background: url(/skins/mono/mono/images/logo.png) no-repeat top left;
+  }
+
+  #navi {
+    position: absolute;
+    bottom: 10px;
+    right: 0;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  #search, #menu { float: left; } /* need inline-block*/
+  .siteSearch form>span { display: none; } /* No stupid redundant label */
+
+  #menu {
+    font-size: 115%;
+  }
+    #menu>a { margin-right: .5em; }
+
+#splash {
+  background: #4b6983 url(/skins/mono/mono/images/splash-gradient.png) no-repeat 90% bottom;
+  color: #fff;
+  border-bottom: 1px solid #091828;
+  overflow: hidden;
+  padding-top: 1px;
+}
+  #splash>div {
+    max-width: 80em;
+    margin: auto;
+    padding: 0 2em;
+    position: relative;
+    height: 230px;
+  }
+  
+  #splash h1 { margin-top: 1em; color: #fff; } 
+  #splash .about { max-width: 42%; margin-left: 0;}
+  #splash a { color: #83a67f; }
+
+  #logos {
+    width: 226px;
+    height: 188px;
+    position: absolute;
+    top: 15px;
+    right: 300px;
+    background: url(/skins/mono/mono/images/logos.png) no-repeat top left;
+  }
+
+  #download {
+    display: block;
+    text-indent: -300em;
+    width: 139px;
+    height: 39px;
+    position: absolute;
+    bottom: 40px;
+    right: 30px;
+    background: url(/skins/mono/mono/images/download.png) no-repeat top left;
+    outline: none;
+  }
+
+  #downloadlabel {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 40px;
+    color: #000;
+  }
+    #downloadlabel h2 { color: black; }
+
+  #splash .distro-icons {
+    position: absolute;
+    bottom: 16px;
+    left: 16px;
+  }
+    .distro-icons>a>img { border: 0; margin-right: 6px; }
+
+#content {
+  margin: auto;
+  max-width: 60em;
+  padding: 1em 2em 6em 20em;
+  min-height: 20em;
+  position: relative;
+  overflow: hidden;
+}
+  .page-home #content {
+    max-width: 80em;
+    padding: 1em 2em;
+  }
+  .page-home #title { display: none; }
+
+  .sidebar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 18em;
+    padding: 1em;
+    margin-top: 2em;
+  }
+
+    #sidebarmenu a {
+      font-family: 'Arial Rounded CE', 'Arial Rounded', Arial, Sans-Serif;
+      font-weight: bold;
+      color: #222;
+      font-size: 120%;
+      display: block;
+      margin-bottom: .5em;
+    }
+
+.columns {
+  overflow: hidden;
+  margin-bottom: 2em;
+}
+  .columns>div {
+    float: left;
+    width: 46%;
+    margin-right: 2em; 
+  }
+  
+  .spotproject { margin-bottom: 2em; overflow: hidden; }
+
+    .spotproject h3 { margin-top: 0; }
+
+    .spotproject img {
+      display: block;
+      float: left;
+      margin-right: 8px;
+    }
+
+  .separator {
+    padding: 1px 0;
+    width: 100%;
+    background-color: #192838;
+    height: 1px;
+    border-bottom: 1px solid #090818;
+  }
+
+#footer {
+  background: #dbdbdb url(/skins/mono/mono/images/footer.png) no-repeat top center;
+  padding-top: 1px;
+}
+
+  #footer .sitemap, #copy, #footer .wikiEdit {
+    max-width: 80em;
+    margin: auto;
+    padding: 1em 2em 2em;
+    overflow: hidden;
+    clear: left;
+  }
+    #footer .wikiEdit { padding: 0 2em; }
+    #footer ul { margin: 1em 0 2em; padding: 0;}
+
+    .wikiEdit a {
+      color: #729fcf;
+    }
+    .wikiEdit li {
+      display: block;
+      float: left;
+      margin-right: 1em;
+      font-size: 80%;
+    }
+    .login { float: right; overflow: hidden; }
+    .login li {
+      display: block;
+      float: left;
+      margin-right: 1em;
+      font-size: 90%;
+      font-weight: bold;
+    }
+
+    #footer hr {
+      height: 15px;
+      background: url(/skins/mono/mono/images/footerhr.png) repeat-x top center;
+      width: 100%;
+      margin-top: -15px;
+    }
+
+    #footer .links {
+      font-size: 90%;
+      float: left;
+      margin: 0 2em 0 1em;
+      width: 19em;
+      min-height: 16em;
+    }
+      #footer .links h3 { margin: 0 0 1em 0; }
+      #footer .links ul {
+        line-height: 150%;
+        margin: 0 0 0 2em;
+      }
+      .links li { margin: 0; }
+
+    #mono-logo {
+      display: none;
+      /*
+      float: left;
+      width: 127px;
+      height: 32px;
+      background: url(/skins/mono/moonlight/images/mono-logo.png) no-repeat top left;
+      text-indent: -300em;
+      margin-right: 20px;
+      */
+    }
+    
+    #novell-logo {
+      display: block;
+      float: left;
+      width: 73px;
+      height: 32px;
+      background: url(/skins/mono/moonlight/images/novell-logo.png) no-repeat top left;
+      border-right: 1px dotted #828282;
+      padding-right: 5px;
+      margin-right: 10px;
+      text-indent: -300em;
+    }
+
+    #footer .legal { font-size: 90%; color: #828282; margin-top: 8px; }
+
+/* images can't be too wide */
+img.internal { max-width: 60em; width: 100%; margin: 1em 0 2em 0; }
+td>img.internal { max-width: 300px; width: inherit; }
+
+.printfooter { display: none; }
+
+#pageToc { display: none; } /*FIXME just a workaround */
+  .pageToc li { font-size: 90%; margin: 0 0 1em 0; position: relative; padding-left: 2.2em; }
+    .pageToc>ol>li { padding-left: 1.5em; }
+    .pageToc>ol>li>ol>li>ol>li { padding-left: 3em; }
+  .pageToc li>span { display: block; position: absolute; top: 0; left: 0; }
+  .editIcon {
+    display: block;
+    float: right;
+  }
+    .editIcon .sectionedit {
+      background: url('/skins/mono/moonlight/images/edit.png') no-repeat top left;
+    }
+    .editIcon .sectionedit:after { content: 'edit' }
+
+#pageTypeSpecial { padding: 1em; margin: 2em 0 14em 0; }
+#pageTypeSpecial #searchForm { display: none; }
