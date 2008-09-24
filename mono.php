@@ -252,7 +252,6 @@ if  ($wgTitle->getPrefixedText() != wfHomePageInternalTitle()) { #sidebar for ev
           <li><a href="/About">About Mono</a></li>
           <li><a href="/Roadmap">Roadmap</a></li>
           <li><a href="/What_is_Mono">Technologies</a></li>
-          <li><a href="/Screenshots">Screenshots</a></li>
           <li><a href="/Companies_Using_Mono">Success Stories</a></li>
           <li><a href="/FAQ">FAQs</a></li>
         </ul>
