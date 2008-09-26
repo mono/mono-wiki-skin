@@ -226,7 +226,7 @@ if  ($wgTitle->getPrefixedText() != wfHomePageInternalTitle()) { #sidebar for ev
 		$this->BasePageMenuControl('delete', 'Skin.Common.delete-page');
 		$this->BasePageMenuControl('tags', 'Skin.Common.tags-page');
     print "<li>&nbsp; &nbsp;</li>";
-		print "<li><a href='" . wfMsg('controlpanellink') . "'>control panel</li>\n"; //FIXME this isn't right, actually :)
+    	  	print '<a href="' . $sk->makeAdminUrl('') . '">Control Panel</a>';
     print "<li>&nbsp; &nbsp;</li>";
 		$this->BasePageMenuControl('print', 'Skin.Common.print-page');
 		$this->BasePageMenuControl('email', 'Skin.Common.email-page');
